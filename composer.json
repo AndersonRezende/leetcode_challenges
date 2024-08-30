@@ -1,0 +1,20 @@
+{
+    "name": "anderson/leetcode_challenges",
+    "description": "Answers to challenges found on the website https://leetcode.com/problemset/",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^11"
+    },
+    "license": "APACHE2",
+    "autoload": {
+        "psr-4": {
+            "Anderson\\LeetcodeChallenges\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anderson Rezende",
+            "email": "andersonrezende17@hotmail.com"
+        }
+    ]
+}
