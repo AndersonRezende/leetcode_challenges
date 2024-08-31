@@ -4,13 +4,12 @@ namespace TwoSum;
 
 use Anderson\LeetcodeChallenges\TwoSum\TwoSum;
 use Iterator;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 class TwoSumTest extends TestCase
 {
-    /**
-     * @dataProvider providerTwoSum
-     */
+    #[DataProvider('providerTwoSum')]
     public function testTwoSum(array $input, int $target, array $output): void
     {
         $twoSumResult = TwoSum::twoSum($input, $target);
