@@ -3,7 +3,7 @@
     "description": "Answers to challenges found on the website https://leetcode.com/problemset/",
     "type": "project",
     "require-dev": {
-        "phpunit/phpunit": "^11"
+        "phpunit/phpunit": "^11.3"
     },
     "license": "APACHE2",
     "autoload": {
