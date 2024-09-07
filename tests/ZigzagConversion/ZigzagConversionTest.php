@@ -9,14 +9,14 @@ use PHPUnit\Framework\TestCase;
 
 class ZigzagConversionTest extends TestCase
 {
-    #[DataProvider('providerLongestPalindromicSubstring')]
-    public function testLongestPalindromicSubstring(string $string, int $rows, string $expected): void
+    #[DataProvider('provider')]
+    public function testZigzagConversion(string $string, int $rows, string $expected): void
     {
         $zigZagConversion = ZigZagConversion::zigZagConversion($string, $rows);
         $this->assertEquals($expected, $zigZagConversion);
     }
 
-    public static function providerLongestPalindromicSubstring(): Iterator
+    public static function provider(): Iterator
     {
         yield 'Carga 1' => ['PAYPALISHIRING', 3, 'PAHNAPLSIIGYIR'];
         yield 'Carga 2' => ['PAYPALISHIRING', 4, 'PINALSIGYAHRPI'];

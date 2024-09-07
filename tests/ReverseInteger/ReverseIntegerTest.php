@@ -9,14 +9,14 @@ use PHPUnit\Framework\TestCase;
 
 class ReverseIntegerTest extends TestCase
 {
-    #[DataProvider('providerLongestPalindromicSubstring')]
-    public function testLongestPalindromicSubstring(int $num, int $expected): void
+    #[DataProvider('provider')]
+    public function testReverseInteger(int $num, int $expected): void
     {
         $reverseInteger = ReverseInteger::reverseInteger($num);
         $this->assertEquals($expected, $reverseInteger);
     }
 
-    public static function providerLongestPalindromicSubstring(): Iterator
+    public static function provider(): Iterator
     {
         yield 'Carga 1' => [123, 321];
         yield 'Carga 2' => [-123, -321];
